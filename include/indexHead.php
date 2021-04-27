@@ -30,8 +30,13 @@ session_start();
 					<img class="img-fluid " height="30%" width="40%" src="assets/logo.jpeg" alt="foto"></a>
 				<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item"><a class="nav-link " aria-current="" href="View/Login.php">Login</a></li>
-						<li class="nav-item"><a class="nav-link " aria-current="" href="View/Logout.php">Logout</a></li>
+						<?php if (!empty($_SESSION)) {
+							echo "<li class='nav-item'><a class='nav-link ' aria-current='' href='View/Logout.php'>Logout</a></li>";
+						} else {
+							echo "<li class='nav-item'><a class='nav-link' aria-current='' href='View/Login.php'>Login</a></li>";
+						}
+
+						?>
 						<li class="nav-item"><a class="nav-link " aria-current="" href="#">Home</a></li>
 						<li class="nav-item"><a class="nav-link " href="View/invoices.php"">Invoices</a></li>
 						<li class=" nav-item"><a class="nav-link " href="View/companiesDetails.php">Companies</a></li>
