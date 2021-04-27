@@ -10,10 +10,10 @@
 ### include folder
 ### assets
 
-  ####### Database 
+  ###### Database 
           The database named cogip contain three tables invoice, company, people and type of companies
           
-  #######  Outlook 
+  ######  Outlook 
  
           TABLE Type (id_Type int not null AUTO_INCREMENT PRIMARY KEY, label varchar (50) NOT null);
           
@@ -23,11 +23,11 @@
           
          TABLE invoice (number varchar(128) NOT NULL, invoice_date date DEFAULT NULL, id_People int(11) NOT NULL, id_Company int not null, FOREIGN KEY( id_Company) REFERENCES Company( id_Company), id_invoice int(11) NOT NULL AUTO_INCREMENT, PRIMARY KEY (id_invoice), KEY `id_People (id_People)
           
- #######  using the Mvc model
+ ######  using the Mvc model
 
          We tried to use the mvc model by creating an abstract class called Process handler that handles all the interactions with the database, a controller class that we called validation that commute between the view and the process handler and finally the views that shows the contents to users.
          
- ####### the include folder
+ ###### the include folder
  
             the include folder contains all the included files such as headers and footers
             
