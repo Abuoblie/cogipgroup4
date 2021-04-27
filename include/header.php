@@ -29,11 +29,11 @@ session_start();
 				<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item"><a class="nav-link " aria-current="" href="../View/Login.php">Login</a></li>
-						<li class="nav-item"><a class="nav-link " aria-current="" href="../view/Logout.php">Logout</a></li>
+						<li class="nav-item"><a class="nav-link " aria-current="" href="../View/Logout.php">Logout</a></li>
 						<li class="nav-item"><a class="nav-link " aria-current="" href="../index.php">Home</a></li>
 						<li class="nav-item"><a class="nav-link " href="../View/invoices.php">Invoices</a></li>
 						<li class="nav-item"><a class="nav-link " href="../View/companiesDetails.php">Companies</a></li>
-						<li class="nav-item"><a class="nav-link " href="../view/contactPageDetails.php">Contacts</a></li>
+						<li class="nav-item"><a class="nav-link " href="../View/contactPageDetails.php">Contacts</a></li>
 						<li class="nav-item">
 							<?php if (!empty($_SESSION)) { ?>
 
