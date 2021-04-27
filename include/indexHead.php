@@ -31,11 +31,11 @@ session_start();
 				<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item"><a class="nav-link " aria-current="" href="View/Login.php">Login</a></li>
-						<li class="nav-item"><a class="nav-link " aria-current="" href="view/Logout.php">Logout</a></li>
+						<li class="nav-item"><a class="nav-link " aria-current="" href="View/Logout.php">Logout</a></li>
 						<li class="nav-item"><a class="nav-link " aria-current="" href="#">Home</a></li>
 						<li class="nav-item"><a class="nav-link " href="View/invoices.php"">Invoices</a></li>
-						<li class="nav-item"><a class="nav-link " href="View/companiesDetails.php">Companies</a></li>
-						<li class="nav-item"><a class="nav-link " href="view/contactPageDetails.php">Contacts</a></li>
+						<li class=" nav-item"><a class="nav-link " href="View/companiesDetails.php">Companies</a></li>
+						<li class="nav-item"><a class="nav-link " href="View/contactPageDetails.php">Contacts</a></li>
 						<li class="nav-item">
 							<?php if (!empty($_SESSION)) { ?>
 
@@ -43,10 +43,10 @@ session_start();
 									<button class="btn btn-sm navbar nav-link" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Admin
 									</button>
 									<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-										<li><a class="dropdown-item" href="">Dashboard</a></li>
-										<li><a class="dropdown-item" href="view/newContact.php">New Contact</a></li>
-										<li><a class="dropdown-item" href="view/newInvoice.php">New Invoice</a></li>
-										<li><a class="dropdown-item" href="view/newCompany.php">New Company</a></li>
+										<li><a class="dropdown-item" href="#">Dashboard</a></li>
+										<li><a class="dropdown-item" href="View/newContact.php">New Contact</a></li>
+										<li><a class="dropdown-item" href="View/newInvoice.php">New Invoice</a></li>
+										<li><a class="dropdown-item" href="View/newCompany.php">New Company</a></li>
 									</ul>
 								</div>
 							<?php } ?>
